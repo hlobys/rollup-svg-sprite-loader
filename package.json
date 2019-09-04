@@ -1,0 +1,14 @@
+{
+  "name": "rollup-svg-sprite-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tatyana Gulina",
+  "license": "ISC",
+  "dependencies": {
+    "svg-baker": "^1.5.0"
+  }
+}
