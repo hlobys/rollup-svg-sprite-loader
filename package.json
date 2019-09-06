@@ -4,11 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build:cjs && npm run build:es",
-    "build:cjs": "rollup -c -o dist/rollup-svg-sprite-loader-cjs.js -f cjs",
-    "build:es": "rollup -c -o dist/rollup-svg-sprite-loader-es.js -f es6",
-    "lint": "eslint src"
   },
   "author": "Tatyana Gulina",
   "license": "ISC",
