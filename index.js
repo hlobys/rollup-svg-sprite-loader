@@ -41,7 +41,7 @@ module.exports = function svgSpriteLoader (options = {}) {
       })
       const content = sprite.render()
       // eslint-disable-next-line max-len
-      const svgNodeInsert = 'if (window) { window.document.addEventListener(\'DOMContentLoaded\', function(){ window.document.body.prepend('+ content + ') }); }'
+      const svgNodeInsert = 'if (window) { window.document.addEventListener(\'DOMContentLoaded\', function(){ window.document.body.prepend('+ JSON.stringify(content) + ') }); }'
       const replacedCode = code + svgNodeInsert
 
       return { code: replacedCode }
