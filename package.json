@@ -1,10 +1,9 @@
 {
-  "name": "rollup-svg-sprite-loader",
+  "name": "rollup-svg-sprite-loader1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "Tatyana Gulina",
   "license": "ISC",
   "dependencies": {
