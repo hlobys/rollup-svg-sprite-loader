@@ -9,7 +9,7 @@
   "dependencies": {
     "nanoid": "^2.1.0",
     "svg-baker": "^1.5.0",
-    "eslint": "^2.11.1",
+    "eslint": "^4.18.2",
     "rollup": "^0.26.3"
   }
 }
