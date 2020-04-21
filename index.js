@@ -33,7 +33,7 @@ module.exports = function svgSpriteLoader (options = {}) {
       }
 
       // eslint-disable-next-line max-len
-      return`var img = {id: ${svgReplace.id}, content: ${JSON.stringify(svgReplace.content)}, viewbox: ${JSON.stringify(svgReplace.viewBox)} }; export default img;`;
+      return`var img = {id: ${svgReplace.id}, content: ${JSON.stringify(svgReplace.content)}, viewbox: ${JSON.stringify(svgReplace.viewBox)}, viewBox: ${JSON.stringify(svgReplace.viewBox)} }; export default img;`;
 
       const ast = {
         type: 'Program',
