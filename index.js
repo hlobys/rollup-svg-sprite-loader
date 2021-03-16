@@ -53,7 +53,7 @@ module.exports = function svgSpriteLoader (options = {}) {
       });
       const content = sprite.render();
       // eslint-disable-next-line max-len
-      const svgNodeInsert = 'if (window) { window.document.addEventListener(\'DOMContentLoaded\', function(){ const div = document.createElement(\'div\'); div.setAttribute(\'style\', \'position: absolute; height:0; width: 0; overflow: hidden;\');  div.innerHTML = '+ JSON.stringify(content) + ';  window.document.body.appendChild(div) }); }'
+      const svgNodeInsert = 'if (typeof window !== "undefined" && window && window.document && window.document.body) { window.document.addEventListener(\'DOMContentLoaded\', function(){ const div = document.createElement(\'div\'); div.setAttribute(\'style\', \'position: absolute; height:0; width: 0; overflow: hidden;\');  div.innerHTML = '+ JSON.stringify(content) + ';  window.document.body.appendChild(div) }); }'
       const replacedCode = code + svgNodeInsert;
 
       return { code: replacedCode }
