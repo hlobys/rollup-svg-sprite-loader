@@ -7,7 +7,7 @@
   "author": "Tatyana Gulina",
   "license": "ISC",
   "dependencies": {
-    "nanoid": "^2.1.0",
+    "nanoid": "^3.1.31",
     "svg-baker": "^1.5.0",
     "eslint": "^4.18.2",
     "rollup": "^0.26.3"
